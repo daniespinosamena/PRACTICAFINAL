@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fitxers_sd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dani.practicafinal.ActivityFitxersSD"
+    android:background="@drawable/back">
+
+    <Button
+        android:text="BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBackSD"
+        android:background="@drawable/button_corners"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="LLEGIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGuardarSD"
+        android:layout_alignStart="@+id/btnGuardarSD"
+        android:layout_marginTop="12dp"
+        android:id="@+id/btnLeerSD"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="NOM FITXER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNomFitxerSD"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/btnGuardarSD"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNomFitxerSD"
+        android:background="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_below="@+id/tvNomFitxerSD"
+        android:layout_alignStart="@+id/tvNomFitxerSD"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:text="GUARDAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:id="@+id/btnGuardarSD"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_below="@+id/etContSD"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="31dp"
+        android:id="@+id/etContSD"
+        android:background="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_below="@+id/tvContSD"
+        android:layout_alignStart="@+id/tvContSD" />
+
+    <TextView
+        android:text="MEMORIA EXTERNA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="CONTINGUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvContSD"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/etNomFitxerSD"
+        android:layout_alignEnd="@+id/tvNomFitxerSD"
+        android:layout_marginTop="31dp" />
+</RelativeLayout>

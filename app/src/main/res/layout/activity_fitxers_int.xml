@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fitxers_int"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dani.practicafinal.ActivityFitxersInt"
+    android:background="@drawable/back">
+
+    <TextView
+        android:text="NOM FITXER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:layout_weight="0.15"
+        android:layout_below="@+id/tvMemoriaInterna"
+        android:layout_alignStart="@+id/etNomFitxInt"
+        android:id="@+id/tvNomFitxerInt" />
+
+    <Button
+        android:text="LLEGIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/btnLeerInt"
+        android:background="@android:color/background_light"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/btnGuardarInt"
+        android:layout_alignStart="@+id/btnGuardarInt" />
+
+    <Button
+        android:text="GUARDAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:background="@android:color/background_light"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/btnGuardarInt"
+        android:layout_below="@+id/etContFitxInt"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etContFitxInt"
+        android:background="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/etNomFitxInt"
+        android:layout_alignEnd="@+id/etNomFitxInt" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNomFitxInt"
+        android:background="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_below="@+id/tvNomFitxerInt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="CONTINGUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvContFitxerInt"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBottom="@+id/etContFitxInt"
+        android:layout_toStartOf="@+id/btnGuardarInt"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:text="MEMORIA INTERNA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMemoriaInterna"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBackFitxInt"
+        android:background="@drawable/button_corners"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
