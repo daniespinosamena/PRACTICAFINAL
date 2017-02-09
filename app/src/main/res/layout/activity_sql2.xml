@@ -206,7 +206,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:id="@+id/tvBD"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textColor="@android:color/background_light"
                 android:textStyle="normal|bold"
                 android:layout_height="wrap_content"

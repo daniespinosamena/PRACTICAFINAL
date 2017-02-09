@@ -51,13 +51,22 @@ public class ActivityContentProvider extends AppCompatActivity {
         mostrarLlamadas = (Button) findViewById(R.id.btnMostrarLlamadas);
         mostrar = (TextView) findViewById(R.id.tvMostrarLlamadas);
 
+        backPro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityContentProvider.this, ActivityPrincipal.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         mostrarLlamadas.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //Uri a la que accedemos
                 Uri uriLlamadas = Uri.parse("content://call_log/calls");
                 ContentResolver cr = getContentResolver();
                 mostrar.setText("Lista de llamadas:\n \n");
-                mostrar.setText("FECHA---HORA---TIPO----TELEFONO----DURACION");
+                mostrar.setText("FECHA---HORA---TIPO---TELEFONO---DURACION");
                 Cursor c = cr.query(uriLlamadas, //sobre el que hacemos la consulta
                         projection, //Columnas a devolver
                         null, //Cláusula WHERE
@@ -92,13 +101,5 @@ public class ActivityContentProvider extends AppCompatActivity {
             }
         });
 
-        backPro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityContentProvider.this, ActivityPrincipal.class);
-                startActivity(intent);
-                finish();
-            }
-        });
     }
 }

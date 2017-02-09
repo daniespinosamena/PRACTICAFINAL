@@ -74,7 +74,7 @@ public class ActivitySql2 extends AppCompatActivity {
                     //BUSCAMOS POR ID
                     String[] columnas = new String[]{"ID","tipo","marca","nom","preu"};
                     String[] args = new String[]{etID.getText().toString()};
-                    String res = "--ID---TIPO--MARCA--NOMBRE--PRECIO\n";
+                    String res = "--ID---TIPO--MARCA-NOMBRE--PRECIO\n";
                     Cursor c;
                     c=db.query("Producte",columnas,"ID=?",args,null,null,null);
                     String id,tipus,marca,nom,preu;
